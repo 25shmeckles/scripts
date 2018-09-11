@@ -98,3 +98,5 @@ ENV/
 *.c
 *.h
 *.bin
+*.dblite
+*.bin
