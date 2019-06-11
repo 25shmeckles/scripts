@@ -6,11 +6,14 @@ import pickle
 ver = '0.1'
 
 ## Helper functions
+def help(doc):
+    print(doc)
+
 def connect():
     pass
 
 
-def sendFile(infile, socket):
+def sendfile(infile, socket):
     while True:
         conn, addr = socket.accept()     # Establish connection with client.
         print('Got connection from', addr)
@@ -30,7 +33,7 @@ def sendFile(infile, socket):
     print('Server listening....')
 
 
-def receiveFile(outfile, socket):
+def receivefile(outfile, socket):
     with open(outfile, 'wb') as f:
         print('file opened')
         while True:
